@@ -17,8 +17,10 @@ ChatterUp is an interactive real-time chat application designed to facilitate se
    ```bash
    git clone https://github.com/your-username/ChatterUp.git
 2.Install the required dependencies:
+   ```bash
    npm install
 3.Run the server:
+  ```bash
   npm start
 The application will be available at http://localhost:3000.
 
