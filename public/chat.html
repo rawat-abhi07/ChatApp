@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatterUp - Chat Room</title>
+  <link rel="stylesheet" href="./style/chat.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="chat-header">
+    <div class="chat-header-left">
+      <!-- Avatar Image -->
+      <img id="user-avatar" src="" alt="User Avatar" class="user-avatar">
+      <!-- Welcome Message -->
+      <h2 id="welcome-message">Welcome, <span id="username"></span>!</h2>
+    </div>
+    <div class="chat-header-right">
+      <p id="online-users" class="dropdown">
+        Users Online: <span id="online-count">0</span>
+        <div id="dropdown-content" class="dropdown-content" hidden>
+          <!-- Usernames will be dynamically added here -->
+        </div>
+      </p>
+    </div>
+    
+  </header>
+
+  <!-- Main Chat Area -->
+  <main class="chat-main">
+    <div class="chat-window" id="chat-window">
+      <!-- Messages will be dynamically loaded here -->
+    </div>
+    <!-- Typing Indicator -->
+    <div class="typing-indicator" id="typing-indicator" hidden>
+      <p><span id="typing-user"></span> is typing...</p>
+    </div>
+  </main>
+
+  <!-- Chat Input -->
+  <footer class="chat-footer">
+    <form id="message-form">
+      <input
+        type="text"
+        id="message-input"
+        placeholder="Type your message here..."
+        autocomplete="off"
+      />
+      <button type="submit" class="send-btn">Send</button>
+    </form>
+  </footer>
+
+  <!-- Include JavaScript -->
+  <script src="../socket.io/socket.io.js"></script>
+    <script type="module" src="./js/chat.js"></script>
+
+</body>
+</html>
