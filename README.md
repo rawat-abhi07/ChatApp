@@ -16,17 +16,18 @@ ChatterUp is an interactive real-time chat application designed to facilitate se
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/ChatterUp.git
-2.Install the required dependencies:
+2. Install the required dependencies:
    ```bash
    npm install
-3.Run the server:
-  ```bash
-  npm start
+3. Run the server:
+   ```bash
+   npm start
+
 The application will be available at http://localhost:3000.
 
-Features
-*Real-time chat functionality using Socket.io.
-*Seamless communication between users.
-*User-friendly interface with basic chat features.
-Contributing
-If you'd like to contribute to this project, feel free to fork the repository, make improvements, and submit a pull request.
+## Features
+### *Real-time chat functionality using Socket.io.
+### *Seamless communication between users.
+### *User-friendly interface with basic chat features.
+## Contributing
+### If you'd like to contribute to this project, feel free to fork the repository, make improvements, and submit a pull request.
